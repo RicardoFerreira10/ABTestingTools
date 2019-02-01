@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
        
         /// Kii configurations
-        Kii.begin(withID: "7x35luuelexf", andKey: "b8c60a397c564e0faebc67af3a3b9bb6", andSite: KiiSite.US)
+        Kii.begin(withID: "<KII_APP_ID>", andKey: "<KII_APP_KEY>", andSite: KiiSite.US)
         
         /// Firebase configurations
         FirebaseApp.configure()
@@ -35,10 +35,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         /// Optimizely configuration
         _ = OPTLYManagerBuilder(block: { (builder) in
             builder!.projectId = nil;
-            builder!.sdkKey = "YV3fAjQDdnChogUdgxMXW9"
+            builder!.sdkKey = "<OPTIMIZELY_SDK_KEY>"
         })
-
-
 
         return true
     }

@@ -44,7 +44,7 @@ class ViewController: UIViewController {
     private func performKiiExperiment() {
         let experiment : KiiExperiment
         do {
-            experiment = try KiiExperiment.getSynchronous("78d7ecf4-0467-11e9-9fa5-22000a66c675")
+            experiment = try KiiExperiment.getSynchronous("<KII_EXPERIMENT_ID>")
         } catch _ as NSError {
             // Handle the error.
             return
